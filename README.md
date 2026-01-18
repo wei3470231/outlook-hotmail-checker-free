@@ -1,10 +1,10 @@
-# Outlook/Hotmail Account Checker
+# live/hotmail/outlook/msn Account Checker
 
 A high-performance, stable, and easy-to-use tool for verifying the validity of Microsoft accounts (Outlook, Hotmail, Live, MSN).
 
-## ✨ Key Features
+## ✨ Key Featureslive/hotmail/outlook/msn
 - **Fully Automated**: Handles complex multi-stage OIDC login flows automatically.
-- **Concurrent Processing**: Supports multi-threaded checking (Free version is hardcoded to 5 threads).
+- **Concurrent Processing**: Supports multi-threaded checking .
 - **Account Intelligence**: Automatically fetches account region (`CountryCode`) and subscription info (`Expires`) upon successful login.
 - **Cookie Management**: Optional saving of session cookies for post-check usage.
 - **Smart Result Categorization**: Automatically sorts accounts into `output/` directory (Success, Locked, Password Error, Not Exist, etc.).
@@ -20,7 +20,7 @@ A high-performance, stable, and easy-to-use tool for verifying the validity of M
 ## ⚙️ Configuration Detail (`config.json`)
 ```json
 {
-    "threads": 10,              // Number of concurrent threads for processing accounts.
+    "threads": 5,              // Number of concurrent threads for processing accounts.
     "accounts_file": "hot.txt", // Source file for accounts (Format: email:password).
     "proxy_file": "proxy.txt",  // Proxy list file (one per line). Supports empty/direct.
     "ok_file": "output/ok.txt", // Storage for successfully authenticated accounts.
@@ -47,4 +47,4 @@ A high-performance, stable, and easy-to-use tool for verifying the validity of M
 - **Telegram Channel**: [@DAMOMANIS_MAIL](https://t.me/DAMOMANIS_MAIL)
 
 ---
-*Note: The free version is strictly limited to a maximum of 5 threads.*
+*Note: .........................................................*
