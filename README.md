@@ -1,4 +1,4 @@
-# live.com/hotmail.com/outlook.com/msn.com Account Checker
+# live/hotmail/outlook/msnAccount Checker
 
 A high-performance, stable, and easy-to-use tool for verifying the validity of Microsoft accounts (Outlook, Hotmail, Live, MSN).
 
