@@ -1,16 +1,19 @@
-# live/hotmail/outlook/msnAccount Checker
+# live/hotmail/outlook/msn Account Checker
 
 A high-performance, stable, and easy-to-use tool for verifying the validity of Microsoft accounts (Outlook, Hotmail, Live, MSN).
 
 ## ✨ Key Features
 - **Fully Automated**: Handles complex multi-stage OIDC login flows automatically.
-- **Concurrent Processing**: Supports multi-threaded checking .
-- **Security**: Random fingerprints, fully simulating browser login .
+- **Concurrent Processing**: Supports multi-threaded checking for high throughput.
+- **Security**: Random fingerprints and full browser login simulation.
+- **Domain & Password Pre-validation**: Automatically filters accounts with unsupported domains (only supports live.com, hotmail.com, outlook.com, msn.com) and passwords that don't meet security rules (length 8-25, 2+ character types) before attempting login.
+- **Auto-Clear Console**: Automatically clears the CMD window every 2000 lines to maintain smooth performance and clear visibility during long runs.
 - **Account Intelligence**: Automatically fetches account region (`CountryCode`) and subscription info (`Expires`) upon successful login.
 - **Cookie Management**: Optional saving of session cookies for post-check usage.
-- **Smart Result Categorization**: Automatically sorts accounts into `output/` directory (Success, Locked, Password Error, Not Exist, etc.).
+- **Smart Result Categorization**: Automatically sorts accounts into the `output/` directory (Success, Locked, Password Error, Not Exist, etc.).
 - **Security & Stability**: Built-in single-instance detection and console "Quick Edit" prevention to ensure uninterrupted execution.
-- **Debug Ready**: Sequential raw POST response logging for deep protocol analysis and failure HTML source dumping.
+- **Optimized Performance**: Pre-compiled regex and optimized lookup algorithms for minimum CPU overhead.
+- **Debug Ready**: Sequential raw POST response logging for deep protocol analysis and failed HTML source dumping.
 
 ## 🚀 Quick Start
 1. **Prepare Accounts**: Put your accounts in `hotmail.txt` (or your custom file) using the format `email:password`.
@@ -22,7 +25,7 @@ A high-performance, stable, and easy-to-use tool for verifying the validity of M
 ```json
 {
     "threads": 10,              // Number of concurrent threads for processing accounts.
-    "accounts_file": "hot.txt", // Source file for accounts (Format: email:password).
+    "accounts_file": "hotmail.txt", // Source file for accounts (Format: email:password).
     "proxy_file": "proxy.txt",  // Proxy list file (one per line). Supports empty/direct.
     "ok_file": "output/ok.txt", // Storage for successfully authenticated accounts.
     "lock_file": "output/lock.txt",     // Storage for accounts detected as 'Locked'.
@@ -48,4 +51,4 @@ A high-performance, stable, and easy-to-use tool for verifying the validity of M
 - **Telegram Channel**: [@DAMOMANIS_MAIL](https://t.me/DAMOMANIS_MAIL)
 
 ---
-*Note: .........................................................*
+*Note: This tool is intended for research and educational purposes only.*
